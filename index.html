@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="top-bar">
+        <i class="material-icons">arrow_drop_down</i>
+        <span>Now Playing</span>
+        <i class="material-icons">more_horiz</i>
+    </div>
+
+    <div class="img-area">
+        <img src="" alt="">
+    </div>
+
+    <div class="song-details">
+        <p class="name"></p>
+        <p class="artist"></p>
+    </div>
+
+    <input type="range" id="progress-slider" value="0">
+
+    <audio id="main-audio"></audio>
+
+    <div class="controls">
+        <button id="prev" class="material-icons">skip_previous</button>
+        <div class="play-pause">
+            <button class="material-icons">play_arrow</button>
+        </div>
+        <button id="next" class="material-icons">skip_next</button>
+    </div>
+</div>
+
+<script src="music_list.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
